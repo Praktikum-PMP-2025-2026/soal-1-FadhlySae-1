@@ -13,11 +13,11 @@
 //#include <math.h>
 
 // fungsi floor
-int floor2(int a) {
-    if (a>0){
-        return a/2;
+int floor2(int a, int kiri, int kanan) {
+    if (a<0){
+        return ((kiri+kanan)-1)/2;
     } else {
-        return (a-1)/2;
+        return (kiri+kanan)/2;
     }
 }
 
@@ -85,7 +85,12 @@ int main () {
             }
 
             if (has_right&&has_left) {
-                a[i] = (floor2(a[i])); //konversi ke integer
+                if ((kiri+kanan) > 0) {
+                    a[i] = (kiri + kanan)/2;
+                } else {
+                    a[i] = (kiri + kanan -1)/2; //konversi ke integer
+                }
+                
             } else if (has_left) {
                 a[i] = kiri;
             } else if (has_right){
@@ -129,4 +134,3 @@ int main () {
 
     return 0;
 }
-//[1] https://www.geeksforgeeks.org/dsa/largest-sum-contiguous-subarray/
