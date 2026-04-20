@@ -7,25 +7,8 @@
  
     [SOAL 1]
     Mencari dan memulihkan elemen array yang hilang, lalu mencari jumlah subarray maksimum
-    /** EL2008 Praktikum Pemecahan Masalah dengan Pemrograman 2024/2025
- *   Modul               : 01
- *   Hari dan Tanggal    : Rabu, 15 April 2026
- *   Nama (NIM)          : M Agni Aulia Fadhly Saepudin (13224042)
- *   Nama File           : soal2.c
- *   Deskripsi           : 
- 
-    [SOAL 2]
-    Untuk setiap bilangan, hitung banyak langkah sampai menjadi 1 dengan aturan transformasi tertentu. 
-    Kondisi/Aturan 
-    1. Jika n genap, ubah menjadi n / 2  
-    2. Jika n ganjil dan n > 1, ubah menjadi 3n + 1  
-    3. Hitung banyak transformasi sampai n = 1  
-    4. Gunakan rekursi 
-
-    Format Input: T n1 n2 ... nT 
-    Format Output: LANGKAH x
-
- */
+/** EL2008 Praktikum Pemecahan Masalah dengan Pemrograman 2024/2025
+*/
 #include <stdio.h>
 #include <math.h>
 
