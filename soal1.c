@@ -13,7 +13,13 @@
 //#include <math.h>
 
 // fungsi floor
-
+int floor2(int a) {
+    if (a>0){
+        return a/2;
+    } else {
+        return (a-1)/2;
+    }
+}
 
 // MaxSubarraySum [1]
 int maxSubarraySum(int arr[], int size) {
@@ -48,6 +54,8 @@ int main () {
     for (int i=0; i<N; i++) {
         scanf(" %d", &a[i]);
     }
+
+    
     //printf("cek\n");
     //for (int i=0; i<N; i++) {
     //    printf(" %d", a[i]);
@@ -77,7 +85,7 @@ int main () {
             }
 
             if (has_right&&has_left) {
-                a[i] = ((kiri+kanan)/2); //konversi ke integer
+                a[i] = (floor2(a[i])); //konversi ke integer
             } else if (has_left) {
                 a[i] = kiri;
             } else if (has_right){
@@ -121,3 +129,4 @@ int main () {
 
     return 0;
 }
+//[1] https://www.geeksforgeeks.org/dsa/largest-sum-contiguous-subarray/
