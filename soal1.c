@@ -10,7 +10,10 @@
 /** EL2008 Praktikum Pemecahan Masalah dengan Pemrograman 2024/2025
 */
 #include <stdio.h>
-#include <math.h>
+//#include <math.h>
+
+// fungsi floor
+
 
 // MaxSubarraySum [1]
 int maxSubarraySum(int arr[], int size) {
@@ -74,7 +77,7 @@ int main () {
             }
 
             if (has_right&&has_left) {
-                a[i] = (int)floor((kiri+kanan)/2); //konversi ke integer
+                a[i] = ((kiri+kanan)/2); //konversi ke integer
             } else if (has_left) {
                 a[i] = kiri;
             } else if (has_right){
